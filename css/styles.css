@@ -133,6 +133,33 @@ h1, h2, h3, h4, h5, h6 {
 
 /* contact */
 
+.container-contact img{
+    min-height: 150px;
+    max-width: 150px;
+    
+}
+.container-contact .row{
+    padding: 50px;
+}
+
+form button{
+background-color: #ee746b;
+color: white;
+font-weight: bold;
+
+
+}
+.lyseform{
+    color: #ee746b;
+    font-weight: bold;
+    max-width: 700px;
+    padding: 0px 15px;
+    margin: 0px auto;
+}
+.container-contact ul{
+    list-style-type: none;
+}
+
 
 
 

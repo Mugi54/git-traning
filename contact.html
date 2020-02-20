@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitTuto Design</title>
     <meta name="description" content="GitTuto Design">
+    
     <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    
+
     <div include-html="includes/header.html"></div>
     
     <main class="fade-anim delay-5ms">
@@ -17,10 +20,66 @@
         </section>
     </main>
 
+    <div class="container container-contact">
+        
+        <div class="row">
+            
+            <div class="col-4">
+                <h2>Contactez nous par téléphone</h1>
+                    <img src="./img/phone.jpg" alt="email">
+                    <p>+336 18 00 00 00</p>
+            </div>
+        
+
+            
+            <div class="col-4">
+                <h2>Contactez nous par email</h2>
+                <img src="./img/email.jpg" alt="email">
+                <p>Formulaire ci-dessous: </p>
+            </div>
+        
+
+            
+            <div class="col-4">
+                <h2>Contactez nous par voie postale</h2>
+                <img src="./img/mail box.jpg" alt="email">
+                <ul>
+                    <li>26 rue de la fontaine</li>
+                    <li>57 190 florange</li>
+                    <li>France</li>
+                </ul>
+            </div>
+        </div>
+            
+        
+    </div>
+
+    <form class="lyseform" action="contact.php" method="GET">
+
+        <label for="nom">Nom</label>
+        <input type="text" name="Nom" id="Nom" value="">
+        
+        <label for="prénom">Prénom</label>
+        <input type="text" name="Prénom" id="Prénom" value="">
+        
+        <label for="email">Email</label>
+        <input required type="email" name="email" id="email"><br><br>
+        
+        <label for="message">Message</label><br>
+        <textarea name="message" id="message" cols="80" rows="10">Bonjour,</textarea><br>
+        
+        <label><input type="checkbox" name="j'accpete">Accepter la politique de confidentialité</label><br>
+        <button type="submit">Envoyer</button>
+        
+        
+        </form>
+
+
     <div include-html="includes/footer.html"></div>
 
     <script>const currentpage = 'contact';</script>
     <script src="js/script.js"></script>
     
+
 </body>
 </html>
